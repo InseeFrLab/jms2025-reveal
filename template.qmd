@@ -31,7 +31,7 @@ format:
 . . .
 
 2. ```{.python}
-quarto use template InseeFrLab/jms2025-slides
+quarto use template InseeFrLab/jms2025-reveal
 ```
 
 . . .
