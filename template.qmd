@@ -1,0 +1,80 @@
+---
+title: EM ou EMEX
+subtitle: |
+  **Un paradigme pour le projet `OCTOPUSSE`**
+date: today
+author:
+  - name: Daffy Duck
+    orcid: 0000-0003-1689-0557
+    email: daffy@duck.com
+    affiliations:
+      - name: Insee, DMS
+  - name: Mickey Mouse
+    orcid: 0000-0003-1689-0557
+    email: mickey@mouse.com
+    affiliations:
+      - name: Insee, Genes
+slide-number: true
+footer: |
+  **[onyxia.sh](https://www.onyxia.sh)**
+# uncomment for French presentations:
+#lang: fr
+# for blind readers:
+slide-tone: true
+# for @olevitt:
+chalkboard: # press the B key to toggle chalkboard
+  theme: whiteboard
+# uncomment to use the multiplex mode:
+#multiplex: true
+format:
+  jms-revealjs:
+    output-file: index.html
+# visual editor configuration:
+editor:
+  render-on-save: true
+---
+
+## How to use this template?
+
+1. You need [Quarto](https://quarto.org/) and great news!  
+   Quarto is already installed in the
+   [VSCode service](https://datalab.sspcloud.fr/launcher/inseefrlab-helm-charts-datascience/vscode?autoLaunch=true)
+
+. . .
+
+2. ```{.python}
+quarto use template InseeFrLab/jms2025-slides
+```
+
+. . .
+
+3. Choose the format:
+
+   - `onyxia-revealjs` ([light mode](https://inseefrlab.github.io/onyxia-quarto/))
+   - `onyxia-dark-revealjs` ([dark mode](https://inseefrlab.github.io/onyxia-quarto/dark-mode.html))
+
+. . .
+
+4. ``` bash
+   quarto render mydocument.qmd
+   ```
+
+. . .
+
+5. Read the [Quarto documentation on reveal.js format](https://quarto.org/docs/presentations/revealjs/)
+
+
+## Deployment
+
+1. Refer to [Quarto documentation](https://quarto.org/docs/publishing/github-pages.html)
+
+2. After first commit and push in `main` branch,
+
+```bash
+git checkout --orphan gh-pages
+git reset --hard # make sure all changes are committed before running this!
+git commit --allow-empty -m "Initialising gh-pages branch"
+git push origin gh-pages
+```
+
+3. Come back to `main` branch and create _workflow_ using `Quarto` documentation.

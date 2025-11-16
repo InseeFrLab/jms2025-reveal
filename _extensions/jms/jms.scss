@@ -1,0 +1,52 @@
+/*-- scss:defaults --*/
+$marron:  #552523 ;
+$orange: #ea6858;
+$green: #c8d42c;
+$black: rgb(44, 50, 63);
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+$work-sans: 'Work Sans', sans-serif;
+$font-family-sans-serif: $work-sans !default;
+$presentation-font-size-root: 36px !default;
+$body-color: $black !default;
+
+
+.reveal h1, .reveal h2, .reveal h3 {
+    color: $marron !important;
+}
+
+.reveal code {
+    color: $orange !important;
+}
+
+
+$link-color: $green !default;
+//$light-bg-text-color: $orange !default;
+$light-bg-link-color: $green !default;
+$light-bg-code-color: $orange !default;
+//$dark-bg-text-color: $white !default;
+$dark-bg-link-color: $green !default;
+$dark-bg-code-color: $orange !default;
+
+
+#title-slide {
+  color: $marron;         // si tu as défini la variable SCSS
+}
+
+//#title-slide h1,
+#title-slide .subtitle,
+#title-slide p {
+  color: $marron !important;
+}
+
+#title-slide .quarto-title-author,
+#title-slide .quarto-title-affiliation {
+    color: black !important;
+}
+
+#title-slide .date {
+  color: $black !important;
+  //font-weight: 600;
+}

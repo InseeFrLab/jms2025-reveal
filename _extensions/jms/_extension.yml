@@ -1,0 +1,21 @@
+title: JMS 2025 Presentation (light theme)
+author: Lino Galiana
+version: 0.0.1
+contributes:
+  formats:
+    revealjs:
+      filters: [header.lua]
+      theme: [default, jms.scss]
+      #css: [logo.css]
+      title-slide-attributes:
+        data-background-image: cover.png
+        data-background-size: cover
+        data-background-opacity: 0.8
+      header-includes: |
+        <link rel="icon" type="image/png" sizes="32x32" href="logo_insee.png">
+      email-obfuscation: javascript
+      format-resources:
+        - header_jms2025.png
+        - couverture_jms2025.png
+        - logo_insee.png
+       
